@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class ServerChat {
-    static int port = 6600;
+    static int port = 7777;
     public static void main (String[] args) throws IOException {
 
         System.out.println("\t\t Simple Socket Server");
