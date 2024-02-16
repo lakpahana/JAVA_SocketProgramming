@@ -31,5 +31,13 @@ public class Client {
         String message = in.readLine();
 
         System.out.println("Server says:"+ message);
+
+        System.out.println("Closing the connection");
+
+        socket.close();
+
+        in.close();
+
+        System.exit(0);
     }
 }
