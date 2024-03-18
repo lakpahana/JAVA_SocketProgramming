@@ -13,7 +13,7 @@ public class UDPClient {
     public static void main(String[] args) throws
             IOException
     {
-
+//
         DatagramSocket server = new DatagramSocket(
                 4222
         );
@@ -24,7 +24,7 @@ public class UDPClient {
 
         server.receive(packet);
 
-
+        
         String message = new String(packet.getData());
 
         System.out.println(message.trim());
