@@ -1,13 +1,12 @@
 package threads;
 
-public class singleThread extends Thread {
+public class SingleThreadRunnable implements Runnable {
 
     private int threadNumber = 0; 
 
-    public singleThread(int ThreadNumber){
+    public SingleThreadRunnable(int ThreadNumber){
         this.threadNumber = ThreadNumber;
     }
-
 
     @Override
     public void run(){
@@ -26,5 +25,6 @@ public class singleThread extends Thread {
             }
         }
     }
+    
     
 }
